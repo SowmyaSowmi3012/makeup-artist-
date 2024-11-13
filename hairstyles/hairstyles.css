@@ -1,0 +1,223 @@
+*{
+    
+    padding: 0;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drap{
+    width: 80%;           /*space on bs*/
+    margin: auto;
+    text-align: center;
+    font-size: 35px;  
+    font-weight: 500;
+    padding-top: 4%;      
+}
+.yard{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.yard img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(128, 128, 128, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer a{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover a{
+    bottom: 20%;
+    opacity: 1;
+}
+
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+    .rowa{
+        flex-direction: column;
+    }
+}
+.rowa{
+    margin-top: 0%;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.drapa{
+    width: 80%;           /*space on bs*/
+    margin: auto;
+    text-align: center;
+    font-size: 35px;  
+    font-weight: 500;
+    padding-top: 0%;      
+}
+.yarda{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.yarda img{
+    width: 100%;
+    display: block;
+}
+.layera{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layera:hover{
+    background: rgba(128, 128, 128, 0.7);
+}
+.layera h4{
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layera:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+.layera a{
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layera:hover a{
+    bottom: 20%;
+    opacity: 1;
+}
+
+
+
+
+/*-------------btn--------*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid darkgoldenrod;
+    background: darkgoldenrod;
+    transition: 1s;
+
+}
+.curl{
+    height: 410px;
+}
+.bun{
+    height: 410px;
+}
+.jade{
+    height: 410px;
+}
+.braid{
+    height: 410px;
+}
+.acc{
+    height: 410px;
+}
+.dccd{
+    height: 430px;
+}
+
+
+
+/*----------FOOTER------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    font-size: 28px;
+    color: wheat;
+    
+}
+.icons.fab{
+    color: purple;  
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+.fab:hover{
+    opacity: 0.5;
+}
+.fab{   
+    font-size: 30px;
+}
+

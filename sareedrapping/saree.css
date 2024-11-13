@@ -1,0 +1,122 @@
+*{
+   
+    padding: 0;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drap{
+    width: 80%;           /*space on bs*/
+    margin: auto;
+    text-align: center;
+    font-size: 35px;  
+    font-weight: 500;
+    padding-top: 5%;      
+}
+.yard{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.yard img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(128, 128, 128, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+    .rowa{
+        flex-direction: column;
+    }
+}
+.rowa{
+    margin-top: -10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapa{
+    width: 80%;           /*space on bs*/
+    margin: auto;
+    text-align: center;
+    font-size: 35px;  
+    font-weight: 500;
+    padding-top: 8%;      
+}
+.yarda{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.yarda img{
+    width: 100%;
+    display: block;
+}
+.layera{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layera:hover{
+    background: rgba(128, 128, 128, 0.7);
+}
+.layera h4{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layera:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+

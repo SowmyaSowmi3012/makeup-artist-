@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.logom{
+    width: 14%;
+    height: 14%;
+    border-radius: 88px;
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ 
+ }
+ 
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    
+}
+
+li,a,button{
+    font-weight: 500;
+    font-size: 16px;
+    color:#A9A9A9 ;
+    text-decoration: none;
+
+}
+
+.close-btn {
+    display: none; /* Make it invisible by default */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure the close button is above other elements */
+}
+
+/* Basic Navigation Styles */
+.nav_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Default display, horizontal */
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* When the burger menu is clicked and active */
+.nav_links.show {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.2));
+}
+
+.nav_links li {
+    margin-bottom: 30px; /* Spacing between links */
+}
+
+/* Links style inside nav */
+.nav_links li a {
+    font-size: 24px;
+    color: #A9A9A9;
+    padding: 10px 0;
+}
+
+/* Burger Icon Styles */
+#burger {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute; /* Use absolute positioning */
+    top: 20px; /* Set the vertical position */
+    right: 20px; /* Align it to the right side */
+}
+
+#burger > span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: wheat; /* Color of the burger bars */
+    transition: 0.3s;
+}
+
+
+/* Active Burger Icon State */
+#burger.active > span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+#burger.active > span:nth-child(2) {
+    width: 0;
+}
+
+#burger.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile View Styles */
+@media (max-width: 890px) {
+    #burger {
+        display: block; /* Show the burger icon on mobile screens */
+        position: absolute;
+        top: 20px; /* Keep it aligned vertically */
+        right: 20px; /* Keep it aligned to the right side */
+    }
+
+    .nav_links {
+        display: none; /* Hide menu by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .nav_links.show {
+        display: flex; /* Show menu when it has the 'show' class */
+    }
+
+    .nav_links li {
+        margin-bottom: 30px;
+    }
+
+    /* Close Button (X) */
+    .close-btn {
+        display: none; /* Make it invisible by default */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 1002; /* Ensure the close button is above other elements */
+    }
+
+    /* Show Close Button only when menu is open */
+    .nav_links.show ~ .close-btn {
+        display: block; /* Make the close button visible when the menu is open */
+    }
+}
+
+/* --- slideshow -----*/
+* {
+    box-sizing:border-box
+   
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;    
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+.mySlides.fade {
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/*----------FOOTER------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    font-size: 28px;
+    color: wheat;
+    
+}
+.icons.fab{
+    color: purple;  
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+.fab:hover{
+    opacity: 0.5;
+}
+.fab{   
+    font-size: 30px;
+}
+ /* Scheme css begins */
+ .container{
+    position: relative;
+    /*width: 1100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:59px 20px 10px;
+    
+  }
+  .container .card{
+    max-width: 300px;
+    height: 1px;
+    height: 300px;
+    background:#B79541;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(190, 90, 157, 0.5);
+    transition: 0.3s ease-in-out;
+  }
+  .container .card:hover {
+    height: 580px;
+  }
+  .container .card .imgbox {
+    position: relative;
+    background: #B79541;
+    top: -60px;
+    left: 20px;
+    min-width: initial;
+    min-height: initial;
+    width: 260px;
+    height: 300px;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(190, 110, 166, 0.2);
+  }
+  .container .card .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+    height: 300px;
+  
+  }
+  .container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0s ;
+  }
+  .container .card:hover .content { 
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+  }
+ .jjj{
+     height: 310px;
+     width:260px;
+ }
+ .kkk {
+     height: 320px;
+     width : 270px;
+ }
+ .lll{
+     height: 300px;
+     width: 260px;
+ }
+ .ser {
+     text-align: center;
+     padding-bottom: 5px;
+     padding-top: 10px;
+ }
+ /* gallery */
+ .head{
+     padding-top: 20px;
+ }
+ .main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.img-box{
+    width: 300px; 
+    margin: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.img-box img{
+    width: 100%;
+    height: 300px;
+}
+.img-box:hover{
+    transform: scale(1.05);
+}
+
+
+.window{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.857);
+    transition: all 0.8s;
+}
+.window.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.window img{
+    width: 50%;
+    height: 98%;
+}
+@media(max-width: 1100px){
+    .window .full-img{
+        width: 100%;
+    }
+}
+.us
+{
+    color: #8d7740;
+}
+.ser{
+    color:#8d7740;
+}
+.v{
+color: wheat;
+}
+.follow{
+    text-align: center;
+    padding-top: 25px;
+}
+.lol .img {
+    text-align: center;
+}
+.too{
+    color: teal;
+}
+.sdd{
+    height: 145px;
+    width: 356px;
+}
+/* Contact Page Styles */
+.contact-section {
+    text-align: center;
+    color: white;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #000407;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+#contactForm label {
+    font-size: 1rem;
+    color: #B79541;
+    margin-top: 10px;
+}
+
+#contactForm input, #contactForm textarea {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+#contactForm button {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B79541;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #A67C33;
+}
+/* Appointment Page Styles */
+.appointment-section {
+    text-align: center;
+    color: white;
+    background-color: #2C3E50;
+    padding: 40px 0;
+}
+
+#appointmentForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #000407;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid; /* Add border for form-like appearance */
+}
+
+/* Label Styles */
+#appointmentForm label {
+    font-size: 1rem;
+    color: #B79541;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Input and Textarea Styles */
+#appointmentForm input, #appointmentForm textarea {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+#appointmentForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button Styles */
+#appointmentForm button {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B79541;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Button Hover Effect */
+#appointmentForm button:hover {
+    background-color: #A67C33;
+}
+
+/* Response Message Style */
+#response-message {
+    font-size: 1.1rem;
+    color: #27AE60;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .appointment-section {
+        padding: 20px;
+    }
+    
+    #appointmentForm {
+        padding: 15px;
+    }
+    
+    #appointmentForm input, #appointmentForm textarea {
+        font-size: 0.9rem;
+    }
+}
